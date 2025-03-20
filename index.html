@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveHub - a sua loja de carros</title>
+    <link rel="icon" href="./images/logo-drivehub-bg-off.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <img src="./images/logo-drivehub.png" class="navbar-brand p-0" style="max-height: 100px; max-width: 100px;"/>
+            <button data-bs-toggle="collapse" data-bs-target="#menu-nav" class="navbar-toggler my-2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold ms-2">
+                        <a href="#descontos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Descontos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold ms-2">
+                        <a href="#catalogo-carros" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso catálogo
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold ms-2">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+
+        <section id="sobre-a-loja">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" style="max-height: 680px;" src="./images/slides/slide1.jpg" alt="Foto do espaço interno da concessionária."/>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" style="max-height: 680px;" src="./images/slides/slide2.jpg" alt="Foto de uma mercedes na rua"/>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" style="max-height: 680px;" src="./images/slides/slide3.jpg" alt="foto da garagem interna da concessionária"/>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="py-5 text-center">
+                <div class="container text-sm-center text-md-start text-lg-start">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/loja.jpg" class="d-block rounded" alt="Foto da fachada da loja">
+                        </div>
+                        <div class="col-md-7 mt-4 mt-md-0">
+                            <h2 class="section-title mb-0">Sobre a Loja</h2>
+                            <p class="fs-5">
+                                Oferecemos uma ampla variedade de veículos para todos os gostos e necessidades. Seja
+                                você um amante de carros esportivos, um amante de SUVs robustos ou alguém à procura de
+                                um modelo familiar confortável, temos a opção perfeita para você.
+                            </p>
+                            <h3 class="section-title mt-4 mb-0">Sobre nós</h3>
+                            <p class="fs-5">Nosso compromisso é proporcionar a melhor experiência de compra, com um
+                                atendimento personalizado, opções de financiamento acessíveis e garantia de satisfação.
+                                Seja novo ou seminovo, sempre temos a melhor condição do mercado. Explore nosso showroom
+                                online e encontre o veículo que combine com você. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-4" id="descontos">
+            <div class="container text-center">
+                <div class="row mt-2">
+                    <h2 class="section-title">Descontos por Tempo Limitado</h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/test-drive.jpg" alt="imagem de um test-drive"
+                            class="d-block w-100 rounded img-fluid">
+                        <h3 class="section-title fs-4 my-3">
+                            <i class="bi bi-tag"></i>
+                            Test Drive + Acessórios Gratuitos
+                        </h3>
+                        <p class="mb-4">
+                            Agende um test drive em qualquer modelo da nossa loja e ganhe acessórios exclusivos, como
+                            tapetes, capas para banco e película para vidros. Aproveite também um desconto extra de 5%
+                            se decidir pela compra no dia do test drive!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/troca.jpg" alt="imagem de um carro sendo trocado" class="d-block w-100 rounded"/>
+                        <h3 class="section-title fs-4 my-3">
+                            <i class="bi bi-tag"></i>
+                            Troque seu Carro e Ganhe Bônus Exclusivo!
+                        </h3>
+                        <p class="mb-4">
+                            Na Saborarte, troque seu veículo antigo por um novo e ganhe até R$5000 de bônus! Avalie seu
+                            carro usado e aproveite condições especiais de financiamento com taxas reduzidas. Não perca
+                            a chance de garantir seu carro novo!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/revisao.jpg" alt="imagem de um carro na revisão" class="d-block w-100 rounded"/>
+                        <h3 class="section-title fs-4 my-3">
+                            <i class="bi bi-tag"></i>
+                            Fim de Ano com Carro Novo e Manutenção Grátis!
+                        </h3>
+                        <p class="mb-4">
+                            Neste fim de ano, adquira seu carro novo e ganhe 1 ano de manutenção grátis! Inclui revisão
+                            completa, troca de óleo, filtros e manutenção preventiva para garantir que seu veículo
+                            esteja sempre em perfeito estado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 text-center" id="catalogo-carros">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-4">
+                        Nossos Veículos
+                    </h2>
+                </div>
+                <button data-bs-toggle="collapse" data-bs-target="#catalogo"
+                    class="d-lg-none btn mb-3 container fw-bold" id="btnCatalogo">Ver completo</button>
+                <div class="row collapse d-lg-flex" id="catalogo">
+                    <aside class="col-md-2 mb-3">
+                        <nav class="nav nav-pills flex-column" id="navCatalogo">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#chevrolet"
+                                class="nav-link navCatalogo fw-bold text-center active">Chevrolet</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fiat"
+                                class="nav-link navCatalogo fw-bold text-center">Fiat</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#volkswagen"
+                                class="nav-link navCatalogo fw-bold text-center">Volkswagen</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bmw"
+                                class="nav-link navCatalogo fw-bold text-center">BMW</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mercedes"
+                                class="nav-link navCatalogo fw-bold text-center">Mercedes-Benz</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content ms-3">
+                            <div class="tab-pane active" id="chevrolet">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/onix.jpg"
+                                            alt="Imagem de um Onix" />
+                                        <h5 class="mt-2 fw-bold">Chevrolet Onix</h5>
+                                        <p>
+                                            Hatch compacto, econômico e um dos mais vendidos no Brasil.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/s10.jpg" alt="Imagem de uma S10"/>
+                                        <h5 class="mt-2 fw-bold">Chevrolet S10</h5>
+                                        <p>
+                                            Picape forte e confiável, ideal para trabalho e lazer.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/tracker.jpg" alt="Imagem de uma Tracker"/>
+                                        <h5 class="mt-2 fw-bold">Chevrolet Tracker</h5>
+                                        <p>
+                                            SUV moderno, espaçoso e com tecnologias avançadas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/cruze.jpg" alt="Imagem de um cruze" />
+                                        <h5 class="mt-2 fw-bold">Chevrolet Cruze</h5>
+                                        <p>
+                                            Sedã sofisticado, confortável e com ótimo desempenho.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/equinox.jpg" alt="Imagem de um equinox" />
+                                        <h5 class="mt-2 fw-bold">Chevrolet Equinox</h5>
+                                        <p>
+                                            SUV espaçoso e potente, com alta segurança e tecnologia moderna.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/trailblazer.jpg" alt="Imagem de uma trailblazer" />
+                                        <h5 class="mt-2 fw-bold">Chevrolet Trailblazer</h5>
+                                        <p>
+                                            SUV robusto, potente, com amplo espaço interno, ideal para aventuras.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/spin.jpg" alt="Imagem de uma spin" />
+                                        <h5 class="mt-2 fw-bold">Chevrolet Spin</h5>
+                                        <p>
+                                            Minivan versátil, ideal para famílias que precisam de um carro com grande.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/chevrolet/camaro.jpg"
+                                            alt="Imagem de uma camaro" />
+                                        <h5 class="mt-2 fw-bold">Chevrolet Camaro</h5>
+                                        <p>
+                                            Esportivo icônico, design agressivo e motor potente, puro desempenho.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="fiat">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/uno.jpg" alt="Imagem de um fiat uno" />
+                                        <h5 class="mt-2 fw-bold">Fiat Uno</h5>
+                                        <p>
+                                            Compacto e econômico, ideal para o dia a dia urbano.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/argo.jpg" alt="Imagem de um fiat cargo" />
+                                        <h5 class="mt-2 fw-bold">Fiat Argo</h5>
+                                        <p>
+                                            Hatch moderno e com ótimo custo-benefício, oferecendo conforto e tecnologia.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/toro.jpg" alt="Imagem de um fiat toro" />
+                                        <h5 class="mt-2 fw-bold">Fiat Toro</h5>
+                                        <p>
+                                            Picape com design robusto e excelente desempenho para trabalho e lazer.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/cronos.jpg" alt="Imagem de um fiat cronos" />
+                                        <h5 class="mt-2 fw-bold">Fiat Cronos</h5>
+                                        <p>
+                                            Sedã espaçoso e confortável, com bom desempenho e ótima economia.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/fastback.jpg" alt="Imagem de um fiat fastback" />
+                                        <h5 class="mt-2 fw-bold">Fiat Fastback</h5>
+                                        <p>
+                                            SUV cupê esportivo, motor turbo, tecnologia e alto desempenho.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/strada.jpg" alt="Imagem de um fiat strada" />
+                                        <h5 class="mt-2 fw-bold">Fiat strada</h5>
+                                        <p>
+                                            Picape compacta, líder de vendas, ideal para trabalho e lazer.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/mobi.jpg" alt="Imagem de um fiat mobi" />
+                                        <h5 class="mt-2 fw-bold">Fiat Mobi</h5>
+                                        <p>
+                                            Hatch compacto, econômico e prático, ideal para o dia a dia urbano.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/fiat/pulse.jpg" alt="Imagem de um fiat pulse" />
+                                        <h5 class="mt-2 fw-bold">Fiat Pulse</h5>
+                                        <p>
+                                            SUV compacto e moderno, design arrojado, motor turbo e versatilidade.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="volkswagen">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/gol.jpg" alt="Imagem de um gol" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen Gol</h5>
+                                        <p>
+                                            Hatch compacto e tradicional, um dos carros mais vendidos no Brasil.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/t-cross.jpg" alt="Imagem de um t-cross" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen T-Cross</h5>
+                                        <p>
+                                            SUV compacto, tecnológico e ideal para quem busca conforto e versatilidade.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/virtus.jpg" alt="Imagem de um virtus" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen Virtus</h5>
+                                        <p>
+                                            Sedã grande, com muito espaço e ótimo desempenho, perfeito para viagens
+                                            longas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/amarok.jpg" alt="Imagem de uma amarok" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen Amarok</h5>
+                                        <p>
+                                            Picape robusta e potente, ideal para uso off-road e trabalho pesado.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/saveiro.jpg" alt="Imagem de uma saveiro" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen Saveiro</h5>
+                                        <p>
+                                            Picape compacta, ideal para trabalho e lazer, com versatilidade e
+                                            resistência.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/jetta.jpg" alt="Imagem de um jetta" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen Jetta</h5>
+                                        <p>
+                                            Sedã sofisticado, com design elegante, ótimo desempenho e tecnologia
+                                            avançada.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/tiguan.jpg" alt="Imagem de uma tiguan" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen Tiguan</h5>
+                                        <p>
+                                            SUV de 7 lugares, perfeito para famílias, oferecendo espaço, potência e
+                                            tecnologia.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/catalogo/volkswagen/up.jpg" alt="Imagem de um up!" />
+                                        <h5 class="mt-2 fw-bold">Volkswagen UP!</h5>
+                                        <p>
+                                            Carro compacto, econômico e ágil, ideal para quem precisa de mobilidade
+                                            urbana com baixo consumo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bmw">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/serie3.jpg" alt="imagem de uma bmw série 3" />
+                                        <h5 class="mt-2 fw-bold">BMW Série 3</h5>
+                                        <p>
+                                            Sedã esportivo e sofisticado, com desempenho de alto nível e design
+                                            elegante.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/x1.jpg" alt="Imagem de uma bmw x1" />
+                                        <h5 class="mt-2 fw-bold">BMW X1</h5>
+                                        <p>
+                                            SUV compacto de luxo, perfeito para quem busca conforto e tecnologia.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/m4.jpg" alt="Imagem de uma bmw m4" />
+                                        <h5 class="mt-2 fw-bold">BMW M4</h5>
+                                        <p>
+                                            Carro esportivo de alto desempenho, com motor potente e design agressivo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/z4.jpg" alt="Imagem de uma bmw z4" />
+                                        <h5 class="mt-2 fw-bold">BMW Z4</h5>
+                                        <p>
+                                            Roadster conversível, ideal para quem busca uma experiência de direção
+                                            emocionante e estilo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/serie5.jpg" alt="Imagem de uma bmw série 5" />
+                                        <h5 class="mt-2 fw-bold">BMW Série 5 </h5>
+                                        <p>
+                                            Sedã executivo de luxo, combinando sofisticação, conforto e alto desempenho.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/x3.jpg" alt="Imagem de uma bmw x3" />
+                                        <h5 class="mt-2 fw-bold">BMW X3</h5>
+                                        <p>
+                                            SUV médio, espaçoso e potente, ideal para quem busca versatilidade e
+                                            tecnologia de ponta.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/x7.jpg" alt="Imagem de uma bmw x7" />
+                                        <h5 class="mt-2 fw-bold">BMW X7</h5>
+                                        <p>
+                                            SUV de luxo, com interior extremamente sofisticado e espaço para até 7
+                                            passageiros.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/bmw/i4.jpg" alt="Imagem de uma bmw i4" />
+                                        <h5 class="mt-2 fw-bold">BMW i4</h5>
+                                        <p>
+                                            Sedã esportivo elétrico, desempenho dinâmico e mobilidade sustentável.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="mercedes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/a-class.jpg" alt="Imagem de uma mercedes a-class" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz A-Class</h5>
+                                        <p>
+                                            Compacto de luxo, com design sofisticado e tecnologia moderna.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/c-class.jpg" alt="Imagem de uma mercedes c-class" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz C-Class</h5>
+                                        <p>
+                                            Sedã elegante e confortável, com ótimo desempenho e tecnologias avançadas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/e-class.jpg" alt="Imagem de uma mercedes e-class" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz E-Class</h5>
+                                        <p>
+                                            Sedã de luxo, mais espaçoso, com maior conforto e desempenho.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/s-class.jpg" alt="Imagem de uma mercedes s-class" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz S-Class</h5>
+                                        <p>
+                                            Luxuoso, com tecnologia de ponta, conforto e desempenho de alta performance.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/gla.jpg" alt="Imagem de uma mercedes gla" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz GLA</h5>
+                                        <p>
+                                            SUV compacto de luxo, design moderno, tecnologia e ótimo desempenho.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/gle.jpg" alt="Imagem de uma mercedes gle" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz GLE</h5>
+                                        <p>
+                                            SUV premium, potente e tecnológico, oferecendo conforto e sofisticação.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/cla.jpg" alt="Imagem de uma mercedes cla" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz CLA</h5>
+                                        <p>
+                                            Sedã cupê esportivo, com design arrojado e alto desempenho.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/mercedes/eqs.jpg" alt="Imagem de uma mercedes eqs" />
+                                        <h5 class="mt-2 fw-bold">Mercedes-Benz EQS</h5>
+                                        <p>
+                                            Sedã esportivo elétrico, desempenho dinâmico e mobilidade sustentável
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5 pb-4" id="fale-conosco">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-4">
+                        Fale Conosco
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 px-5 mb-2">
+                        <form class="px-5">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">Seu nome:</label>
+                                <input type="text" id="nome" class="form-control" name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Seu e-mail:</label>
+                                <input type="text" id="email" class="form-control" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone(opcional):</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">Carro de interesse:</label>
+                                <input id="mensagem" class="form-control" name="mensagem"></input>
+                            </div>
+                            <button type="submit" class="btn fw-bold my-2" id="btnForm">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row my-4">
+                            <h3 class="fs-4 section-title">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="bi bi-facebook" viewbox="0 0 16 16"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 mx-1">
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="fs-4 section-title">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                DriveHub Automóveis<br>
+                                Avenida dos Veículos, 1234<br>
+                                Bairro Motorville, Cidade Automotiva - SP<br>
+                                CEP: 12345-678
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="section-title py-3 text-center">
+        <p class="mb-0">
+            &copy; Os dados deste site são fictícios e têm apenas a finalidade de ilustrar o layout da página.
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
