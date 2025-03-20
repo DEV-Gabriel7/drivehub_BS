@@ -21,9 +21,13 @@ O projeto utiliza as seguintes tecnologias:
 ## 📌 Funcionalidades
 
 ✔ Navegação intuitiva com barra de menu responsiva.
+
 ✔ Apresentação de catálogo de carros por categorias.
+
 ✔ Carrossel de imagens dinâmico com **Bootstrap Carousel**.
+
 ✔ Formulário de contato validado com **jQuery Validate**.
+
 ✔ Layout totalmente responsivo adaptado para diferentes dispositivos.
 
 ---
